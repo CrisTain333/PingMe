@@ -21,8 +21,10 @@ export default function welcome() {
           gap: 20,
         }}
       >
-        <Text>PingMe!</Text>
-        <Text></Text>
+        <Text style={style.title}>PingMe!</Text>
+        <Text style={style.punchLine}>
+          Where every thoughts finds a home and every image tells a stroy
+        </Text>
       </View>
     </ScreenWrapper>
   );
@@ -31,15 +33,19 @@ export default function welcome() {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "space-around",
+    // alignItems: "center",
     backgroundColor: "white",
-    // paddingHorizontal: "10px",
-    height: hp(5),
+    paddingHorizontal: wp(10),
+    margin: "10rm",
   },
   welcomeImage: {
     height: hp(40),
     width: wp(100),
     alignSelf: "center",
+  },
+
+  title: {
+    fontSize: 50,
   },
 });
