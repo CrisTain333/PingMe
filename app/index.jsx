@@ -1,12 +1,13 @@
 import { View, Text, Button } from "react-native";
 import React from "react";
 import { useRouter } from "expo-router";
+import ScreenWrapper from "@/components/ScreenWrapper";
 
 export default function index() {
   const router = useRouter();
 
   return (
-    <View>
+    <ScreenWrapper>
       <Text>Hello world ji</Text>
       <Button
         title="Click me"
@@ -16,6 +17,6 @@ export default function index() {
           })
         }
       />
-    </View>
+    </ScreenWrapper>
   );
 }
